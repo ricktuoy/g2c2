@@ -1,0 +1,70 @@
+.image-grid {
+	list-style-type: none;
+	overflow: hidden;
+	padding: 0.5em 0 0 0.5em;
+	max-width: 76em;
+	margin: 0 auto;
+}
+		
+.image-grid li {
+	padding: 0 0.5em 0.5em 0;
+}
+		
+.image-grid li > div {
+	height: 16em;
+	text-align: center;
+	vertical-align: center;
+	position: relative;
+	border: 1px solid #f3f3f2;
+	overflow: hidden;
+}
+		
+.image-grid li a {
+	color: #fff;
+	font-size: 19px;
+	font-weight: bold;
+	text-shadow: 1px 1px 7px #111;
+	position: absolute;
+	bottom: 0.5em; left: 0; right: 0;
+	text-align: center;
+}
+
+.image-grid li a:hover,
+.image-grid li a:focus,
+.image-grid li a:active {
+	text-decoration: none;
+	color: #E3FAF0;
+}
+
+.image-grid li div img {
+	position: absolute;
+	top: 0; left: 0;
+	height: 100%;
+	z-index: -1;
+}
+		
+@media all and (min-width: 27em) {
+	.image-grid li {
+		width: 50%;
+		float: left;
+	}
+}
+		
+@media all and (min-width: 40em) {
+	.image-grid li {
+		width: 33.3333333%;
+	}
+	
+	.image-grid li.wide {
+		width: 66.666666%;
+	}
+}
+	
+@media all and (min-width: 60em) {
+	.image-grid li {
+		width: 25%;
+	}
+	.image-grid li.wide {
+		width: 50%;
+	}
+}

@@ -1,0 +1,2 @@
+<?php exit('Access denied'); __halt_compiler(); ?>
+a:4:{s:9:"wafStatus";s:13:"learning-mode";s:30:"learningModeGracePeriodEnabled";i:1;s:23:"learningModeGracePeriod";i:1467891128;s:7:"authKey";s:64:">sscH%zB:Mpq[ZF]~m@om09:BI<1Om?xUT9N>87d5#6`0*/py(<~f%dR{g-I>(3Q";}

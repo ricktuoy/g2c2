@@ -1,0 +1,70 @@
+/*
+Theme Name: Definition
+Description: Neat. Clean. A touch of blue to your taste.
+Author: WooThemes
+Author URI: http://woothemes.com/
+Author Email: 
+Tags: grey, blue, business
+
+Note: the plugin won't recognize any additional styles if you add them. The styles below offer all the possibilities of Wysija.
+
+List of email client compatible fonts:
+
+Arial
+Arial Black
+Comic Sans MS
+Courier New
+Georgia
+Impact
+Tahoma
+Times New Roman
+Trebuchet MS
+Verdana
+
+*/
+html {
+    background-color: #f2f2f2; /* cannot be transparent and will default to white */
+}
+
+header {
+    background-color: transparent; /* can be transparent */
+}
+body {
+    color:#959595;
+    font-family: "Verdana";
+    font-size: 13px;
+    background-color: #ffffff; /* can be transparent */
+}
+footer {
+    background-color: transparent; /* can be transparent */
+}
+h1 {
+    color: #2f2f2f;
+    font-family: Verdana;
+    font-size: 24px;
+}
+h2 {
+    color: #2f2f2f;
+    font-family: Verdana;
+    font-size: 18px;
+    font-weight:bold;
+}
+h3 {
+    color: #2f2f2f;
+    font-family: Verdana;
+    font-size: 16px;
+    font-weight:bold;
+}
+a {
+    color: #557fae;
+    text-decoration:none;
+}
+unsubscribe {
+    color:#557fae;
+    text-decoration:underline;
+}
+viewbrowser {
+	font-family: "Verdana";
+	font-size:12px;
+	color:#314f71;
+}

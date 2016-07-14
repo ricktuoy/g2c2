@@ -1,0 +1,158 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: GMW Add-on - Xprofile Fields\n"
+"POT-Creation-Date: 2014-11-25 13:27-1000\n"
+"PO-Revision-Date: 2014-11-25 13:28-1000\n"
+"Last-Translator: Eyal Fitoussi <info@geomywp.com>\n"
+"Language-Team: Eyal Fitoussi <info@geomywp.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.10\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/admin/gmw-xf-admin.php:39
+msgid "N/A"
+msgstr ""
+
+#: includes/admin/gmw-xf-admin.php:62
+msgid "Full Address: "
+msgstr ""
+
+#: includes/admin/gmw-xf-admin.php:116
+msgid "GEO Xprofile Fields"
+msgstr ""
+
+#: includes/admin/gmw-xf-admin.php:121 includes/admin/gmw-xf-admin.php:181
+msgid "Location Tab - Logged-in User"
+msgstr ""
+
+#: includes/admin/gmw-xf-admin.php:122
+msgid ""
+"This feature controls the \"Location\" tab of the logged in user when "
+"viewing his own profile page. You can choose to either display the location "
+"tab or you can completly disable it."
+msgstr ""
+
+#: includes/admin/gmw-xf-admin.php:125
+msgid "Enabled"
+msgstr ""
+
+#: includes/admin/gmw-xf-admin.php:126 includes/admin/gmw-xf-admin.php:140
+#: includes/admin/gmw-xf-admin.php:187
+msgid "Disabled"
+msgstr ""
+
+#: includes/admin/gmw-xf-admin.php:132
+msgid "Xprofile Fields Integration"
+msgstr ""
+
+#: includes/admin/gmw-xf-admin.php:133
+msgid ""
+"Two ways you can use this feature: <br />\n"
+"\t\t\t\t\t\t\t\t\t\t1)Create one address field where users can add their "
+"location by entering athe full address.<br />\n"
+"\t\t\t\t\t\t\t\t\t\t2)Create multiple profile fields (you do not have to "
+"create all of them): street, apt, city,state, zipcode, country.<br />\n"
+"\t\t\t\t\t\t\t\t\t\tFirst you will need to create the address xprofile "
+"fields using Buddypress. Once done so you will need to choose the xprofile "
+"for each of the address fields using the select dropdown menus."
+msgstr ""
+
+#: includes/admin/gmw-xf-admin.php:141
+msgid "Single Address Field"
+msgstr ""
+
+#: includes/admin/gmw-xf-admin.php:142
+msgid "Multiple Address Fields"
+msgstr ""
+
+#: includes/admin/gmw-xf-admin.php:148
+msgid "Address Fields"
+msgstr ""
+
+#: includes/admin/gmw-xf-admin.php:149
+msgid ""
+"Choose an xprofile field for each address field which you'd like to use."
+msgstr ""
+
+#: includes/admin/gmw-xf-admin.php:158
+msgid "Google Address Autocomplete"
+msgstr ""
+
+#: includes/admin/gmw-xf-admin.php:159 includes/admin/gmw-xf-admin.php:168
+msgid "Yes"
+msgstr ""
+
+#: includes/admin/gmw-xf-admin.php:160
+msgid ""
+"Use Google Places address autocomplete on the address field. This feature "
+"can only be used when choosing \"Single address field\" above."
+msgstr ""
+
+#: includes/admin/gmw-xf-admin.php:167
+msgid "Google Address Autofill"
+msgstr ""
+
+#: includes/admin/gmw-xf-admin.php:169
+msgid ""
+"While first visiting the registration form the browser will try to get the "
+"user current location and if found it will autofill the address fields."
+msgstr ""
+
+#: includes/admin/gmw-xf-admin.php:182
+msgid ""
+"This feature controls the \"Location\" tab of the logged in user when he "
+"views his own profile page. You can choose to display the location form, map "
+"showing his location or you can completly disable the Location tab."
+msgstr ""
+
+#: includes/admin/gmw-xf-admin.php:185
+msgid "Location Form"
+msgstr ""
+
+#: includes/admin/gmw-xf-admin.php:186
+msgid "Map"
+msgstr ""
+
+#: xprofile-fields.php:30
+msgid ""
+"Xprofile Fields add-on requires GEO my WP plugin version 2.4 or higher in "
+"order to work."
+msgstr ""
+
+#: xprofile-fields.php:32
+msgid ""
+"Xprofile Fields add-on requires GEO my WP's Members Locator add-on to be "
+"activated in order to work."
+msgstr ""
+
+#: xprofile-fields.php:34
+msgid ""
+"GEO Xprofile Fields add-on requires Buddypress plugin version 2.0 or higher "
+"in order to work."
+msgstr ""
+
+#: xprofile-fields.php:109
+msgid " GEO Xprofile Fields"
+msgstr ""
+
+#: xprofile-fields.php:114
+msgid ""
+"Integrate Xprofile fields with GEO my WP. let the users of your site add a "
+"location during registration and add/update the location from the \"Edit "
+"Profile\" page."
+msgstr ""
+
+#: xprofile-fields.php:206
+msgid ""
+"GEO Xprofle Fields add-on requires Buddypress's Extended Profiles component "
+"to be active in order to work."
+msgstr ""

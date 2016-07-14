@@ -1,0 +1,54 @@
+/*
+Theme Name: Crispy Mail - green
+Description: One of 4 different colours of the same crispy theme.
+Author: Gifky
+Author URI: http://themeforest.net/user/Gifky
+Author Email: gifky@gifky.com
+Tags: grey, green, business
+
+Note: the plugin won't recognize any additional styles if you add them. The styles below offer all the possibilities of Wysija.
+
+*/
+html {
+    background-color: #dddddd; /* cannot be transparent and will default to white */
+}
+
+header {
+    background-color: #ffffff; /* can be transparent */
+}
+body {
+    color:#666666;
+    font-family: "Trebuchet MS";
+    font-size: 12px;
+    background-color: #ffffff; /* can be transparent */
+}
+footer {
+    background-color: #ffffff; /* can be transparent */
+}
+h1 {
+    color: #0c5b91;
+    font-family: Trebuchet MS;
+    font-size: 28px;
+}
+h2 {
+    color: #0c5b91;
+    font-family: Trebuchet MS;
+    font-size: 18px;
+}
+h3 {
+    color: #0c5b91;
+    font-family: Trebuchet MS;
+    font-size: 16px;
+}
+a {
+    color: #0c914a;
+    text-decoration:none;
+}
+unsubscribe {
+    color:#444444;
+}
+viewbrowser {
+	font-family:'Arial';
+	font-size:11px;
+	color:#444444;
+}

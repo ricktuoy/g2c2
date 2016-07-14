@@ -1,0 +1,158 @@
+body {
+  font-size: 15px;
+  background: url('g2c2-texture.png') #fcfcfc;
+}
+body, body * {
+  font-family: 'Open Sans', sans-serif !important;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background: rgb(61, 153, 112);
+  color: #fcfcfb;  
+  min-height: 60px;
+}
+
+.navbar * {
+  color: inherit;
+  text-shadow: 1px 1px 1px #717171;
+}
+
+.navbar-nav li a {
+  line-height:30px;
+}
+
+.nav li a:hover, .nav li a:focus, li.active a {
+  text-shadow: none;
+  background: #fff;
+  color: rgb(51,51,51);
+}
+
+.footer {
+  padding: 3px 0;
+  color: #999;
+  font-size: 12px;
+  line-height: 1.1;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+}
+
+.agenda-event-date {
+  color: rgb(71,71,71);
+}
+
+.agenda-event h3 {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0; margin: 0;
+}
+
+.agenda-event {
+  border-bottom: 1px solid rgb(171,171,171);
+  line-height: 18px !important;
+  margin: 0 0 12px 0;
+}
+
+.agenda-event td {
+  vertical-align: center;
+  padding: 6px;
+}
+
+.agenda-event td:first-child {
+  width: 24%;
+}
+
+.agenda-container a {
+  color: inherit;
+}
+
+.agenda-container h1 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.events-entry-title {
+  font-weight: bold;
+}
+
+.events-entry-shortdesc {
+  overflow: hidden;
+}
+
+.ui-accordion-header-active .events-entry-shortdesc {
+  line-height: 0;
+  color: transparent;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+
+}
+
+.blog-main {
+  background: #ffffff;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.blog-post-meta {
+  color: #777;
+}
+
+section.links-main .link {
+  width: 357.5px;
+  text-align: center;
+  background: #f2f2f3;
+  margin: 5px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.links-main .link a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.links-main .link img {
+  width: 100%;
+}
+
+.links-main .link a:hover,
+.links-main .link a:focus {
+  box-shadow: 0px 0px 6px rgb(31,31,31);
+  border: 1px solid #fff;
+}
+
+.links-main .link a:hover p,
+.links-main .link a:focus p {
+  background: rgb(61, 153, 112);
+}
+
+.links-main .link a:hover img,
+.links-main .link a:focus img {
+  opacity: 0.65;
+}
+
+.links-main .link p {
+  position: absolute;
+  top: 70%; left: 0; right: 0;
+  padding: 6px 0;
+  line-height: 1.1;
+  background: rgba(31,31,31,0.4);
+  text-shadow: 0px 0px 3px rgb(31,31,31);
+  font-weight: bold;
+}
+
+.twitter-container,
+.agenda-container {
+  margin-top: 80px;
+}

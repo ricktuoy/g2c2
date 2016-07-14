@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /wp-admin/
+
+User-agent: *
+Disallow: /ai-cache/
+
+User-agent: *
+Disallow: /AI-docs/
+
+User-agent: *
+Disallow: /cape-town-workshop-2014/
+
+
