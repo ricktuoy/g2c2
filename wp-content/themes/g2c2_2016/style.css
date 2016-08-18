@@ -67,6 +67,121 @@ header.main ul.menu li a:hover {
 	color: #211;
 }
 
+#cssmenu,
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {
+  border: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;     
+}
+
+#cssmenu {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: auto;
+}
+#cssmenu,
+#cssmenu > ul > li > ul > li a:hover {
+  background-color: #ddd;
+  color: #211;
+}
+
+#cssmenu > ul {
+  list-style: inside none;
+  padding: 0;
+  margin: 0;
+}
+#cssmenu > ul > li {
+  list-style: inside none;
+  padding: 0;
+  margin: 0;
+  float: left;
+  display: block;
+  position: relative;
+}
+#cssmenu > ul > li > a {
+  outline: none;
+  display: block;
+  position: relative;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#cssmenu > ul > li:first-child > a {
+  border-radius: 5px 0 0 5px;
+}
+#cssmenu > ul > li > a:after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  right: -2px;
+  z-index: 99; 
+}
+#cssmenu ul li.has-sub:hover > a:after {
+  top: 0;
+  bottom: 0;
+}
+#cssmenu > ul > li.has-sub > a:before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  right: 6px;
+  border: 5px solid transparent;
+  border-top: 5px solid #888;
+}
+#cssmenu > ul > li.has-sub:hover > a:before {
+  top: 19px;
+}
+#cssmenu ul li.has-sub:hover > a {
+  padding-bottom: 13px;
+  padding-top: 13px;
+  top: -1px;
+  z-index: 999;
+}
+#cssmenu ul li.has-sub:hover > ul,
+#cssmenu ul li.has-sub:hover > div {
+  display: block;
+}
+
+#cssmenu ul li > ul,
+#cssmenu ul li > div {
+  display: none;
+  width: auto;
+  position: absolute;
+  top: 38px;
+  padding: 10px 0;
+  border-radius: 0 0 5px 5px;
+  z-index: 999;
+}
+
+#cssmenu ul li > ul {
+  width: 200px;
+}
+#cssmenu ul li > ul li {
+  display: block;
+  list-style: inside none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+#cssmenu ul li > ul li a {
+  outline: none;
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+
+
 header.main ul.menu li.loginout a {
 	background-color: transparent;
 	border: 0;

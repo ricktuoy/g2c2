@@ -13,7 +13,9 @@ G2C2 :: A global network of green chemistry centres
 <?php if ( has_nav_menu( 'header-menu' ) ) : ?>
 <?php wp_nav_menu( 
 	array( 
-		'theme_location' => 'header-menu'
+		'theme_location' => 'header-menu', 
+		'container_id' => 'cssmenu', 
+		'walker' => new CSS_Menu_Walker()
 	 	) ); ?>
 <?php endif; ?>
 <img class="gcn" src="<?php g2c2_2016_static_url("gcn_logo.png") ?>" alt="GCN" />
