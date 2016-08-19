@@ -59,7 +59,6 @@ if ( ! class_exists( 'Simple_Membership_Directory' ) ) {
 
 		private function get_members() {
 			if( empty( $this->members ) ) {
-				$this->member_ids = [];
 				$memberships = $this->get_memberships();
 				foreach ( $memberships as $membership_id=>$membership ) {
 					$this->members[$membership_id] = array();
@@ -74,7 +73,6 @@ if ( ! class_exists( 'Simple_Membership_Directory' ) ) {
 								$uid = $user->ID;
 								$user->counter = ++$i;
 								$this->members[$membership_id][$uid] = $member->get_user();
-								$this->member_ids[] = $uid;
 							}
 						}
 					}
