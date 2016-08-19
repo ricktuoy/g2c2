@@ -65,19 +65,23 @@ if ( ! class_exists( 'Simple_Membership_Directory' ) ) {
 					$subs = $membership->get_subscriptions();
 					$i = 0;
 					foreach ( $subs as $sub ) {
-						if ( $sub->status == STATUS_ACTIVE ) {
+						if ( $sub->status == MS_Model_Relationship::STATUS_ACTIVE ) {
 							$member = $sub->get_member();
-							if ( $member->is_normal_member() ) {
+							#if ( $member->is_normal_user() ) {
 								// the user listing loop
 								$user = $member->get_user();
 								$uid = $user->ID;
+								#print $uid;
+								#print $membership_id;
 								$user->counter = ++$i;
-								$this->members[$membership_id][$uid] = $member->get_user();
-							}
+								#print "<br />";
+								$this->members[$membership_id][$uid] = $user;
+							#}
 						}
 					}
 				}
 			}
+			#var_dump($this->members);
 			return $this->members;
 		}
 
@@ -172,14 +176,13 @@ if ( ! class_exists( 'Simple_Membership_Directory' ) ) {
 			ob_start();
 			foreach ( $memberships_order as $ship_id ) {
 				$membership = $memberships[$ship_id];
-				$members = $members[$ship_id];
+				$users = $members[$ship_id];
 				smd_get_template_part( 'header', 'membership' );
-				if ( empty( $members ) ) {
+				if ( empty( $users ) ) {
 					smd_get_template_part( 'none', 'author' );
 				} else {
-					foreach ( $members as $user ) {
-						smd_get_template_part( 'content', 'author' );
-						$smd_members[$membership_id][$uid] = $member->get_user();					
+					foreach ( $users as $user ) {
+						smd_get_template_part( 'content', 'author' );					
 					}
 				}
 				smd_get_template_part( 'footer', 'membership' );

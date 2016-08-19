@@ -122,9 +122,10 @@ function g2c2_2016_members_filter( $members, $memberships, $raw_memberships ) {
   foreach ( $members as $m_id=>$users ) {
     $m_type = $raw_memberships[$m_id]->name;
 
-    if ( strpos( "Corporate", $m_type ) !== FALSE ) {
+
+    if ( strpos( $m_type, "Corporate" ) !== FALSE ) {
       $key = "corporate";
-    } elseif ( strpos( "Research", $m_type ) !== FALSE ) {
+    } elseif ( strpos( $m_type, "Research" ) !== FALSE ) {
       $key = "research";
     } else {
       continue;
