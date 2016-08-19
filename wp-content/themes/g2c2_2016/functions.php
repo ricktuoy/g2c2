@@ -111,6 +111,35 @@ function g2c2_2016_loginout_menu_link( $menu ) {
     return $menu;
 }
 
+function g2c2_2016_memberships_filter( $memberships, $members ) {
+  $corp = (object) array('name' => 'Corporate members');
+  $research = (object) array('name' => 'Research members and associates');
+  return array('corporate'=>$corp, 'research'=> $research);
+}
+
+function g2c2_2016_members_filter( $members, $memberships, $raw_memberships ) {
+  $out_members = array();
+  foreach ( $members as $m_id=>$users ) {
+    $m_type = $raw_memberships[$m_id]->name;
+
+    if ( strpos( "Corporate", $m_type ) !== FALSE ) {
+      $key = "corporate";
+    } elseif ( strpos( "Research", $m_type ) !== FALSE ) {
+      $key = "research";
+    } else {
+      continue;
+    }
+    if ( !array_key_exists($key, $out_members) ) {
+      $out_members[$key] = array();
+    }
+    $out_members[$key] += $users;
+  }
+  return $out_members;
+}
+
+add_filter( 'smd_memberships', 'g2c2_2016_memberships_filter', null, 2);
+add_filter( 'smd_members', 'g2c2_2016_members_filter', null, 3);
+
 function g2c2_2016_add_query_vars_filter( $vars ){
   $vars[] = "membership_id";
   return $vars;
