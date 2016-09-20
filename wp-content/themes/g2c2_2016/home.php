@@ -12,17 +12,12 @@
      
 </section> <!-- twitter container -->
 <section class="upcoming-events">
-<h1>Upcoming events</h1>
-<h2>G2C2 4th Annual Symposium and Workshop</h2>
-<p>18th-19th July 2016<br />
-Chengdu, Sichuan, China<br />
-Hosted by Sichuan University</p>
-<a class="button" href="https://www.surveymonkey.co.uk/r/8WQRBVB">Register now</a>
-</section>
-<div class="clear">&nbsp;</div>
 <h1>Membership map</h1>
 <?php echo do_shortcode('[gmw search_results="1"]'); ?>
 <?php echo do_shortcode("[gmw map=\"1\"]"); ?>
+</section>
+<div class="clear">&nbsp;</div>
+
 </article>
 
 <?php get_footer(); ?>
