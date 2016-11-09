@@ -240,7 +240,7 @@ function smd_get_template_part( $slug, $name = '' ) {
  * @since 1.0
  * @return boolean
  */
-function is_membership_directory(){
+function is_membership_directory() {
 	global $post;
 
 	$listing = false;

@@ -11,6 +11,6 @@ global $membership;
 ?>
 
 
-<div class="membership">
-<h2><?php echo $membership->name ?></h2>
-<ul>
+<table class="membership">
+<caption><?php echo $membership->name ?></caption>
+
