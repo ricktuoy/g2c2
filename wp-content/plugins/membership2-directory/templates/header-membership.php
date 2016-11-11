@@ -19,6 +19,5 @@ global $membership;
 <th>Contact</th>
 <th>Organisation</th>
 <th>Research interests</th>
-<th>
 </tr>
 </thead>

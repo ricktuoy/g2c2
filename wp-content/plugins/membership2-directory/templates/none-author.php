@@ -10,4 +10,4 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 ?>
 
 
-<tr><td>No members found.</td></tr>
+<tr><td colspan="4" class="none-found">No members found.</td></tr>

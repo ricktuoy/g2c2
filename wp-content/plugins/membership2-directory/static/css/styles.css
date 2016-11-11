@@ -1,7 +1,7 @@
 table.membership {
 	width: 85%;
 	margin: 1em auto 0 1em;
-	box-shadow: 3px solid #ddd;
+	box-shadow: 3px  #ddd;
 	border-collapse: collapse;
 }
 
@@ -26,8 +26,17 @@ table.membership thead {
 	border-bottom: 1px solid #ccc;
 }
 
+table.membership thead th {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
 table.membership tbody td {
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
 	text-align: center;
+}
+
+table.membership tbody td.none-found {
+	font-style: italic;
 }
