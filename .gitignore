@@ -1,2 +1,5 @@
 wp-config.php
 *.sql
+*.sql.gz
+wp-content/plugins/simple-user-listing
+wp-content/lib3.log

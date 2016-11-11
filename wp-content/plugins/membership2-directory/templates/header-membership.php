@@ -13,4 +13,3 @@ global $membership;
 
 <table class="membership">
 <caption><?php echo $membership->name ?></caption>
-

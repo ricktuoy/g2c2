@@ -26,6 +26,12 @@ $num_posts = count_user_posts( $user->ID );
 		</a>
 	</td>
 	<td>
-	<?php echo xprofile_get_field_data( 'Research interests', $user->ID); ?>
+	<ul>
+	<?php 
+	foreach(xprofile_get_field_data( 'Research interests', $user->ID) as $interest) {
+		echo "<li>".$interest."</li>";
+	} 
+	?>
+	</ul>
 	</td>
 </tr>
