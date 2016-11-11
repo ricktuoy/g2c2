@@ -20,4 +20,6 @@ table.membership caption {
 
 table.membership thead {
 	font-weight: bold;
+	background-color: #ddd;
+	border-bottom: 1px solid #ccc;
 }
