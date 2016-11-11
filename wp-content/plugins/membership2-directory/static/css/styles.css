@@ -5,6 +5,11 @@ table.membership {
 	border-collapse: collapse;
 }
 
+table.membership .logo {
+	width: 100px;
+	height: auto;
+}
+
 table.membership tr:nth-child(even) {
 	background: #dedede;
 	border-bottom: 1px solid #ccc;
