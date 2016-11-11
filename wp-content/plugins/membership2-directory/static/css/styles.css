@@ -1,6 +1,8 @@
 table.membership {
-	width: 70%;
-	margin: 0 auto;
+	width: 85%;
+	margin: 1em auto 0 1em;
+	box-shadow: 3px solid #ddd;
+	border-collapse: collapse;
 }
 
 table.membership tr:nth-child(even) {
@@ -20,6 +22,12 @@ table.membership caption {
 
 table.membership thead {
 	font-weight: bold;
-	background-color: #ddd;
+	background-color: #eee;
 	border-bottom: 1px solid #ccc;
+}
+
+table.membership tbody td {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	text-align: center;
 }
