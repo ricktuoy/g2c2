@@ -1,7 +1,7 @@
 table.membership {
 	width: 85%;
 	margin: 1em auto 0 1em;
-	box-shadow: 3px  #ddd;
+	box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.35);
 	border-collapse: collapse;
 }
 
