@@ -99,6 +99,7 @@ if ( ! class_exists( 'Simple_Membership_Directory' ) ) {
     		add_filter( 'body_class', array( $this, 'body_class' ) );
     		wp_register_style( 'membershipdirectory', plugins_url( '/static/css/styles.css', __FILE__ ) );
     		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
+    		remove_filter( ‘bp_the_profile_field_value’, ‘xprofile_filter_link_profile_data’, 2);
     	}
 
     	function enqueue_styles() {
