@@ -21,7 +21,7 @@ $num_posts = count_user_posts( $user->ID );
 	<a href="<?php echo get_edit_user_link($user->ID); ?>"><?php echo $user_info->display_name; ?></a>
 	</td>
 	<td>
-		<a href="<?php echo xprofile_get_field_data( 'Website address', $user->ID); ?>" target="_blank">
+		<?php echo xprofile_get_field_data( 'Website address', $user->ID); ?>"
 			<?php echo xprofile_get_field_data( 'Organisation name', $user->ID); ?>
 		</a>
 	</td>

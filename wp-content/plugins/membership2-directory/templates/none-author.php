@@ -10,4 +10,4 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 ?>
 
 
-<p class="no-members"><?php _e('No members found', 'simple-membership-directory');?></p>
+<tr><?php _e('No members found', 'simple-membership-directory');?></tr>
