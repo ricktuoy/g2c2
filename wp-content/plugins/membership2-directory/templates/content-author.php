@@ -18,7 +18,7 @@ $num_posts = count_user_posts( $user->ID );
 	<img src="<?php echo content_url(xprofile_get_field_data( 'Logo', $user->ID)); ?>" class="logo" alt="Logo: "<?php echo xprofile_get_field_data( 'Organisation name', $user->ID); ?> />
 	</td>
 	<td>
-	<a href="<?php echo get_edit_user_link($user->ID); ?>"><?php echo $user_info->display_name; ?></a>
+	<a href="<?php echo bp_core_get_user_domain($user->ID); ?>"><?php echo $user_info->display_name; ?></a>
 	</td>
 	<td>
 		<a href="<?php echo xprofile_get_field_data( 'Website address', $user->ID); ?>" target="_blank">
