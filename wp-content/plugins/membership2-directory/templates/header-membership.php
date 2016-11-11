@@ -13,3 +13,12 @@ global $membership;
 
 <table class="membership">
 <caption><?php echo $membership->name ?></caption>
+<thead>
+<tr>
+<th>Logo</th>
+<th>Contact</th>
+<th>Organisation</th>
+<th>Research interests</th>
+<th>
+</tr>
+</thead>

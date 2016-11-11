@@ -1,0 +1,23 @@
+table.membership {
+	width: 70%;
+	margin: 0 auto;
+}
+
+table.membership tr:nth-child(even) {
+	background: #dedede;
+	border-bottom: 1px solid #ccc;
+}
+
+table.membership tr:nth-child(odd) {
+	border-bottom: 1px solid #eee;
+}
+
+table.membership caption {
+	background-color: #373;
+	color: white;
+	font-size: 1.1em;
+}
+
+table.membership thead {
+	font-weight: bold;
+}

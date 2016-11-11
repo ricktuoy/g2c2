@@ -97,6 +97,12 @@ if ( ! class_exists( 'Simple_Membership_Directory' ) ) {
     		// The main init code should come here now!
     		add_shortcode( 'membershipdirectory', array( $this, 'shortcode_callback' ) );
     		add_filter( 'body_class', array( $this, 'body_class' ) );
+    		wp_register_style( 'membershipdirectory', plugins_url( '/static/css/styles.css', __FILE__ ) );
+    		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
+    	}
+
+    	function enqueue_styles() {
+    		wp_enqueue_style( 'membershipdirectory' );
     	}
 
     	// Add other event handlers and helper functions.
