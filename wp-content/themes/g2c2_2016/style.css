@@ -229,6 +229,13 @@ header.main .clear {
 	clear: both;
 	width: 100%;
 }
+
+img.event-banner {
+	width: 100%;
+	height: auto;
+	box-shadow: 1px 1px 4px #888888;
+}
+
 article.about h1 {
 	font-size: 2em;
 	line-height: 1em;
@@ -280,6 +287,11 @@ article.status h1 {
 	border-bottom: 1px solid #ddd;
 	text-align: right;
 	margin-bottom: 0;
+}
+
+article.status h1.soon {
+	font-size: 2em;
+	text-align: left;
 }
 
 article.status h2 {
@@ -379,6 +391,8 @@ footer {
 	font-size: 1.1em;
 }
 
+
+
 section.twitter-container {
 	float: left;
 	width: 25%;
@@ -389,4 +403,42 @@ section.upcoming-events {
 	float: right;
 	width: 70%;
 	min-height: 350px;
+}
+
+
+.public-event img.thumb {
+	width: 25%;
+	height: auto;
+	float: left;
+	margin-right: 2%;
+	margin-top: 10px;
+}
+.public-event .description {
+	width: 70%;
+	float: right;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+.public-event h3 {
+	margin: 0;
+}
+.public-event p {
+	margin: 0;
+	line-height: 1.1em;
+}
+
+.public-event .dates {
+	text-transform: uppercase;
+	font-size: 0.8em;
+	color: #888;
+	font-weight: bold;
+	margin-bottom: 0.2em;
+	border-bottom: 1px dotted #eee;
+}
+
+.clear {
+	height: 1px;
+	clear: both;
 }

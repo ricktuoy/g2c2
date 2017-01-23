@@ -64,10 +64,10 @@ function g2c2_2016_enqueue_style() {
 	wp_enqueue_style( 'gfont-catamaran','https://fonts.googleapis.com/css?family=Catamaran:300,700', false);
     if ( is_child_theme() ) {
         // load parent stylesheet first if this is a child theme
-	wp_enqueue_style( 'parent-stylesheet', trailingslashit( get_template_directory_uri() ) . 'style.css', false );
+	wp_enqueue_style( 'parent-stylesheet', trailingslashit( get_template_directory_uri() ) . 'style.css?002', false );
     }
-    // load active theme stylesheet in both cases
-    wp_enqueue_style( 'theme-stylesheet', get_stylesheet_uri(), false );
+  // load active theme stylesheet in both cases
+  wp_enqueue_style( 'theme-stylesheet', get_stylesheet_directory_uri() . '/style.css?015' , false);
 }
 
 function g2c2_2016_static_url($path) {
@@ -106,7 +106,6 @@ add_filter( 'wp_nav_menu_header-menu_items','g2c2_2016_loginout_menu_link' );
 
 function g2c2_2016_loginout_menu_link( $menu ) {
     $loginout = "<li class=\"loginout\">".wp_loginout($_SERVER['REQUEST_URI'], false )."</li>";
-    
     $menu .= $loginout;
     return $menu;
 }
@@ -125,7 +124,7 @@ function g2c2_2016_members_filter( $members, $memberships, $raw_memberships ) {
 
     if ( strpos( $m_type, "Corporate" ) !== FALSE ) {
       $key = "corporate";
-    } elseif ( strpos( $m_type, "Research" ) !== FALSE ) {
+    } elseif ( strpos( $m_type, "academic" ) !== FALSE ) {
       $key = "research";
     } else {
       continue;

@@ -46,3 +46,8 @@ table.membership tbody td {
 table.membership tbody td.none-found {
 	font-style: italic;
 }
+
+div.member-detail img.detail {
+	width: 50%;
+	float: right;
+}
