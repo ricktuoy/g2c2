@@ -59,11 +59,12 @@ if ( ! class_exists( 'G2C2_Mailchimp' ) ) {
 			?>
 			<div>
 			<h2>Mailchimp settings</h2>
-			<form action="options.php" method="post">
-			<?php settings_fields( $this::$OPTION_NAME ); ?>
-			<?php do_settings_sections( $this::$SETTINGS_SECTION_PAGE ); ?>
-			<?php submit_button(); ?>
-			</form></div>
+				<form action="options.php" method="post">
+				<?php settings_fields( $this::$OPTION_NAME ); ?>
+				<?php do_settings_sections( $this::$SETTINGS_SECTION_PAGE ); ?>
+				<?php submit_button(); ?>
+				</form>
+			</div>
 			<?php
 		}
 
@@ -131,7 +132,7 @@ if ( ! class_exists( 'G2C2_Mailchimp' ) ) {
 			return ( null !== $this->_api );
 		}
 
-		
+
 	}
 }
 

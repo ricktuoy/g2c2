@@ -122,7 +122,6 @@ if ( ! class_exists( 'Simple_Membership_Directory' ) ) {
 		}
 
 
-
     	function content_filter($content) {
     		$post_name = $GLOBALS['post']->post_name;
 			$member_login = get_query_var(self::$page_query_var_prefix."-user-login");
